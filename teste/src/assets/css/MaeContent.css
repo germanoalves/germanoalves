@@ -1,0 +1,73 @@
+#mae-content {
+  display: flex;
+  max-width: 1200px
+}
+
+#mae-content .menu,
+#mae-content .content {
+  width: 100% !important
+}
+
+#container-content {
+  display: flex;
+  justify-content: center;
+  width: 100%
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menu-content-books {
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(1, auto);
+  grid-gap: 15px;
+  margin-top: 40px;
+
+}
+
+.grid-item {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 0px !important;
+  margin: 0px
+}
+
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(1, auto);
+  }
+
+  #mae-content {
+    display: flex;
+     flex-direction: column;
+     justify-content: center !important;
+ align-content: center !important
+ }
+ 
+ .menu {
+     display: flex;
+     flex-direction: column;
+ }
+ 
+ 
+ .grid-item {
+     text-align: left;    
+ }
+ .grid-item input {
+     justify-content: start;
+     width: 20px;
+     margin: 10px 0px;
+     padding: 0
+ }
+}
